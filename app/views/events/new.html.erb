@@ -1,0 +1,25 @@
+<%= form_for @event do |f| %>
+  <div>
+    <%= f.label :date %>
+    <%= f.date_field :date %>
+  </div>
+  <div>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+  <div>
+    <%= f.label 'How Many People Are Going?', :capacity %>
+    <%= f.text_field :capacity %>
+  </div>
+  <div>
+    <%= f.label :requires_id %>
+    <%= f.check_box :requires_id %>
+  </div>
+  <div>
+  <%= f.submit "Submit To Do" %>
+  </div>
+<% end %>
